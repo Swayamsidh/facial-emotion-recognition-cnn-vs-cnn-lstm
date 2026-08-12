@@ -1,31 +1,33 @@
-# Facial Emotion Recognition: CNN vs CNN+LSTM
+# Facial Emotion Recognition: CNN vs CNN+LSTM for Image and Video Data
 
 A deep learning project for facial emotion recognition using image and video data, with a comparative study of Convolutional Neural Networks (CNN) and CNN+LSTM architectures.
 
 ## Overview
 
-Emotion recognition is an important application of Artificial Intelligence and Computer Vision. Facial expressions contain visual patterns that can be used to identify different emotional states.
+This project presents a comparative study of CNN and CNN+LSTM approaches for facial emotion recognition using both static images and video data.
 
-This project investigates and compares CNN and CNN+LSTM approaches for emotion recognition from facial images and video sequences.
+The primary objective is to determine which approach is more suitable for different types of input:
 
-The CNN component focuses on spatial feature extraction, while the CNN+LSTM architecture combines convolutional feature extraction with LSTM-based temporal learning for sequential data.
+- **CNN for static image-based emotion recognition**
+- **CNN+LSTM for sequential video-based emotion recognition**
 
-The project was developed using Python and deep learning frameworks in a GPU-enabled Google Colab environment.
+CNN is effective at learning spatial features from individual facial images or video frames. CNN+LSTM extends this approach by using an LSTM to learn temporal dependencies across consecutive video frames.
 
----
+The project therefore focuses not only on emotion recognition accuracy, but also on understanding how the nature of the input data affects the suitability of the recognition architecture.
 
 ## Objectives
 
-The main objectives of the project are:
+The main objective of this project is to identify the most suitable emotion recognition approach for static images and video sequences.
 
-- Develop deep learning models for facial emotion recognition.
-- Compare CNN and CNN+LSTM approaches.
-- Evaluate emotion recognition using image and video data.
-- Study spatial feature extraction using convolutional layers.
-- Study temporal dependency learning using LSTM layers.
-- Evaluate model performance using standard classification metrics.
-- Analyze the suitability of different architectures for static and sequential emotion recognition.
+Specifically, the project aims to:
 
+- Compare CNN and CNN+LSTM approaches for facial emotion recognition.
+- Evaluate their performance on image and video data.
+- Determine the suitability of CNN for static image recognition.
+- Determine the suitability of CNN+LSTM for sequential video recognition.
+- Study the importance of temporal information in video-based emotion recognition.
+- Evaluate model performance using Accuracy, Precision, Recall and F1-Score.
+- Analyze how the nature of the input data influences model performance.
 ---
 
 ## CNN vs CNN+LSTM
@@ -160,17 +162,16 @@ Dataset sources and usage information are provided in:
 
 ## Results
 
-The repository currently includes accuracy comparison plots for image and video emotion recognition.
+### Key Finding
 
-### Image Accuracy Comparison
+The comparative analysis demonstrates that the most suitable architecture depends on the type of input data.
 
-![Average Accuracy Comparison for Images](results/figures/image_accuracy_comparison.png)
+| Input Type | Preferred Approach | Main Reason |
+|---|---|---|
+| Static Images | **CNN** | Effective spatial feature extraction |
+| Video Sequences | **CNN+LSTM** | Captures spatial features and temporal dependencies |
 
-### Video Accuracy Comparison
-
-![Average Accuracy Comparison for Videos](results/figures/video_accuracy_comparison.png)
-
-The project analysis indicates that CNN-based approaches are effective for spatial feature learning, while incorporating LSTM enables temporal learning across sequential video frames.
+**Conclusion:** CNN is more suitable for static image-based emotion recognition, while CNN+LSTM is more suitable for sequential video-based emotion recognition.
 
 ---
 
