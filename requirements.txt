@@ -4,5 +4,3 @@ opencv-python
 numpy
 matplotlib
 scikit-learn
-pandas
-seaborn
