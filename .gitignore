@@ -1,1 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
 
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Kaggle credentials
+kaggle.json
+.kaggle/
+
+# Environment variables
+.env
+
+# Raw datasets
+data/raw/
+data/datasets/
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Extracted frames
+frames/
+extracted_frames/
+
+# Compressed datasets
+*.zip
+
+# Trained model files
+*.pth
+*.pt
+*.ckpt
+
+# Temporary files
+*.tmp
+*.log
