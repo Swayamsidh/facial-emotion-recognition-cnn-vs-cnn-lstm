@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="assets/project_banner.png" alt="Facial Emotion Recognition - CNN vs CNN+LSTM" width="100%">
+</p>
 # Facial Emotion Recognition: CNN vs CNN+LSTM for Image and Video Data
 
 A deep learning project for facial emotion recognition using image and video data, with a comparative study of Convolutional Neural Networks (CNN) and CNN+LSTM architectures.
